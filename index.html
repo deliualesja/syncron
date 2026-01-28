@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Syncron </title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header> 
+        <div class="content flex_space">
+        <div class="logo">
+          <img src="image/logo.jpeg" alt="">
+        </div>
+        <div class="navlinks">
+            <ul id="menulist">
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#room">Room</a> </li>
+                <li> <a href="#pages">Pages</a> </li>
+                <li> <a href="#news">News</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+                <li> <i class= "fas fa-search" style="color:#3e5d58;"> </i> </li>
+                <li> <button class="primary-btn"> BOOK NOW </button> </li>
+              </ul>
+              <!-- <span class="fas fas fa-bars" style="color:#3e5d58;" onclick="menutoggle()"> </span> -->
+        </div>
+        </div>
+    </header>
+
+    <script>
+        var menulist=document.getElementsById('menulist');
+        menulist.style.maxHeight="0px";
+        function menutoggle(){
+        if (menulist.style.maxHeight=="0px"){
+            menulist.style.maxHeight="100vh";
+        } else {
+            menulist.style.maxHeight="0px";
+        }
+
+        }
+    </script>
+    <section class="home" id="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item"> 
+            
+                    <img src="image/ap 1.jpg">
+                    <div class="text">
+                        <h1> Sikronizuar me kujtimin tuaj te preferuar</h1>
+                        <p> Daily Rentals | Apartamente me qera ditore </p>
+                        <div class="flex">
+                            <button class="primary-btn"> Read More </button>
+                            <button class="secondary-btn"> Contas Us </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item"> 
+            
+                    <img src="image/ap 2.jpg">
+                    <div class="text">
+                        <h1>Sikronizuar me kujtimin tuaj te preferuar</h1>
+                        <p> Daily Rentals | Apartamente me qera ditore </p>
+                        <div class="flex">
+                            <button class="primary-btn"> Read More </button>
+                            <button class="secondary-btn"> Contas Us </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item"> 
+            
+                    <img src="image/ap 3.jpg">
+                    <div class="text">
+                        <h1> Sikronizuar me kujtimin tuaj te preferuar</h1>
+                        <p> Daily Rentals | Apartamente me qera ditore </p>
+                        <div class="flex">
+                            <button class="primary-btn"> Read More </button>
+                            <button class="secondary-btn"> Contas Us </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots: false,
+    navText:["<i class = 'fas fa-chevron-left'></i>","<i class = 'fas fas fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+
+<section class="book" id="book">
+<div class="container flex_space">
+<div class="text">
+    <h1> <span> Book </span> Your Rooms</h1>
+</div>
+<div class="form">
+    <form class="booking-grid" id="bookingForm">
+        <input type="date" placeholder="Araival Date" id="arrival_date" required>
+        <input type="date" placeholder="Departure Date" id="departure_date" required>
+        <select id="availability_room" style="padding: 20px; border: none; outline: none; width: 100%;">
+            <option value="" disabled selected>Select Room</option>
+            <option value="Apartment with Balcony">Apartment with Balcony</option>
+            <option value="Deluxe King Studio">Deluxe King Studio</option>
+            <option value="Lovely Two Bedroom">Lovely Two Bedroom</option>
+        </select>
+        <input type="number" placeholder="Adults" id="adults" min="1" required>
+        <input type="number" placeholder="Childern" id="children" min="0">
+        <input type="submit" value="Check Availability">
+    </form>
+</div>
+</div>
+
+</section>
+<section class="about top" id="about">
+    <div class="container flex">
+        <div class="left">
+            <div class="heading">
+                <h1> WELCOME </h1>
+                <h2>Syncron</h2>
+            </div>
+            <p> Syncron is a new daily rentals enterprise located in Tirana, part of DD Projects. Our main goal is to create homes that are carefully crafted to be in syncron with your comfort and needs. We mean to offer you a synchronized stay with all your wishes and necessities. Our apartments are located im different locations in Tirana. They were designed in such way to bring comfort and tranquility.</p>
+        <button class="primary-btn">ABOUT US</button>
+        </div>
+        <div class="right">
+            <img src="image/foto 3.png" alt="">
+        </div>
+    </div>
+
+</section>
+
+<section class="counter top">
+<div class="container grid">
+    
+    <div class="box">
+        <h1 class="count" data-target="1250"> 0 </h1>
+        <hr> 
+        <span> Happy Costumer </span>
+    </div>
+
+    <div class="box">
+        <h1 class="count" data-target="150"> 0 </h1>
+        <hr> 
+        <span> Expert Technicians </span>
+    </div>
+
+    <div class="box">
+        <h1 class="count" data-target="3550"> 0 </h1>
+        <hr> 
+        <span> Desktop Reaired</span>
+    </div>
+
+    <div class="box">
+        <h1 class="count" data-target="2500"> 0 </h1>
+        <hr> 
+        <span> Costumer</span>
+   </div>
+</div>
+</section>
+
+<section class="apartaments" id="room">
+    <div class="container top">
+        <div class="heading">
+            <h1>EXPLORE</h1>
+            <h2>OUR APARTAMENTS</h2>
+            <P> Në SINKRON me dëshirat tuaja të zemrës, shpresojmë që të shijoni komoditetin e shtëpisë tuaj në qytetin e mrekullueshëm të Tiranës.</P>
+      </div>
+
+        <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="items">
+                <div class="image">
+                    <img src="image/ap 1.jpg" height="250px" alt="">
+                </div>
+                <div class="text">
+                    <h2> Apartment with Balcony </h2>
+                    <div class="rate flex">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p> This house offers ample opportunities to enjoy the city centre. Only 7 minutes walk from Skanderbag Square and 10 minutes walk from Ring Center, this apartment is in perfect location. Enjoy the comfy interior of this studio apartment and drink your morning coffee on its balcony.</p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>€40 <span> <br> Per Night</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="image">
+                    <img src="image/ap 2.jpg" height="250px" alt="">
+                </div>
+                <div class="text">
+                    <h2> Deluxe King Studio </h2>
+                    <div class="rate flex">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p> Also known as our bestseller apartment. It is located only 7 minutes from the city centre and it is in one of the most safest area in Tirana. It is said that once you stay here, you never want to go home again.</p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>€40 <span> <br> Per Night</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="image">
+                    <img src="image/ap 3.jpg" height="250px" alt="">
+                </div>
+                <div class="text">
+                    <h2> Lovely Two Bedroom </h2>
+                    <div class="rate flex">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p> If you want to go somewhere tranquil this is the perfect apartment for you. You can come with your family or friends and enjoy the calmness of nature nearby Artificial Lake of Tirana. In this two bedroom apartment you’ll find everything you’ll need for short or longer stays.</p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>€40 <span> <br> Per Night</span></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+</section>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots: false,
+    navText:["<i class = 'fas fa-chevron-left'></i>","<i class = 'fas fas fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2,
+            margin:10,
+
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+
+<section class="gallery">
+    <div class="container top">
+        <div class="heading">
+            <h1>PHOTOS</h1>
+            <h2>Our Gallery</h2>
+            <p> This house offers ample opportunities to enjoy the city centre. Only 7 minutes walk from Skanderbag Square and 10 minutes walk from Ring Center, this apartment is in perfect location. Enjoy the comfy interior of this studio apartment and drink your morning coffee on its balcony.</p>
+        </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                 <div class="img">
+                    <img src="image/1.1.jpg" alt="">
+                 </div>
+                 <div class="overlay">
+                    <span class="far fa-plus"> </span>
+                    <h3>Photo Title Here.</h3>
+                 </div>
+                </div>
+            
+
+                <div class="items">
+                    <div class="img">
+                        <img src="image/1.2.jpg" alt="">
+    
+                    </div>
+                    <div class="overlay">
+                        <span class="far fa-plus"> </span>
+                        <h3>Photo Title Here.</h3>
+                    </div>
+                </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/1.3.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/2.1.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/2.2.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/2.3.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/2.4.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/3.1.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/3.2.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/3.3.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/3.4.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <div class="img">
+                            <img src="image/3.5.jpg" alt="">
+        
+                        </div>
+                        <div class="overlay">
+                            <span class="far fa-plus"> </span>
+                            <h3>Photo Title Here.</h3>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    navText:["<i class = 'fas fa-chevron-left'></i>","<i class = 'fas fas fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:4,
+
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+</script>
+
+ <section class="services top" id="services">
+    <div class="container">
+        <div class="heading">
+            <h1> SERVICES </h1>
+            <h2>Our Services</h2>
+            <p>Ne ofrojmë apartamente të stiluara me stil modern që e bëjnë qëndrimin tuaj të paharrueshëm dhe më komod se kurrë.</p>
+        </div>
+
+        <div class="content flex_space">
+         <div class="left grid2"> 
+                <div class="box">
+                    <div class="text">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Free WiFi</h3>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <i class="fas fa-square-parking"></i>
+                        <h3>Parking</h3>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <i class="fas fa-film"></i>
+                        <h3>Netflix</h3>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <i class="fas fa-kit-medical"></i>
+                        <h3>First aid kit</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <img src="image/foto 2.png" alt="">
+
+               </div>  
+
+        </div>
+    </div>
+
+ </section>
+
+ <section class="Customer top">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+            <div class="item">
+                <i class="fas fa-quote-right" style="color:#13322B;"></i>
+                <p>“Iris was a wonderful host! Her place is clean, well designed and spacious. There are many great coffee shops, restaurants in walking distance and the neighborhood itself is great! We wouldn’t hesitate to stay at this apartment again.”</p>
+                <h3>Sindi</h3>
+                <label> Albania</label>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-quote-right" style="color:#13322B;"></i>
+                <p>“Great responsiveness, excellent location and a modern fully furnished flat.”</p>
+                <h3>Ali</h3>
+                <label>UK</label>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-quote-right" style="color:#13322B;"></i>
+                <p>We are a regular Airbnb travelers and would rate Iris place as one of the nicest, quiet, and real value of all the places we have stayed. The place was very clean, modern, had everything we needed to feel at home. Also close to a big supermarket which was handy, and few steps to dozens of restaurants and cafes. Communication was great too. We would highly recommend this wonderful apartment.</p>
+                <h3>Alesja</h3>
+                <label> Albania </label>
+            </div>
+
+        </div>
+
+    </div>
+
+ </section>
+
+ <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    dots: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1,
+
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+
+<section class="news new apartaments" id="news">
+    <div class="container">
+        <div class="heading">
+            <h1> NEWS </h1>
+            <h2>New Apartaments </h2>
+            <p>Comming Soon...</p>
+        </div>
+        <div class="content flex">
+            <div class="left grid2">
+                <div class="items">
+                    <div class="image">
+                        <img src="image/coming soon.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Rooftop City Center </h2>
+                        <div class="admin flex">
+                            <i class="far fa-heart"></i>
+                                <label>500</label>
+                            <i class="far far fa-comment"></i>
+                            <label>30</label>
+
+                        </div>
+                        <p>4 studio apartments</p>
+                        <p>1 bedroom apartment</p>
+                        <p>Pet friendly</p>
+                        <p>All of them located at the best locations in Tirana.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+ 
+    </div>
+</section>
+<footer id="contact">
+    <div class="container grid">
+        <div class="box">
+            <img src="image/logo 5.jpg" alt="">
+            <p>Syncron is a new daily rentals enterprise located in Tirana, part of DD Projects. Our main goal is to create homes that are carefully crafted to be in syncron with your comfort and needs. We mean to offer you a synchronized stay with all your wishes and necessities. Our apartments are located im different locations in Tirana. They were designed in such way to bring comfort and tranquility.</p>
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-tiktok"></i>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#about" style="color: white;">Company History</a></li>
+                <li><a href="#about" style="color: white;">About Us</a></li>
+                <li><a href="#contact" style="color: white;">Contact Us</a></li>
+                <li><a href="#services" style="color: white;">Services</a></li>
+                <li><a href="#" style="color: white;">Privacy Policy</a></li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+            <h2>Contact Us</h2>
+           <i class="fas fa-location-dot"></i>
+           <a href="https://www.google.com/maps/search/?api=1&query=Tirana+Albania" target="_blank" style="color: white; text-decoration: none;">Tirana, Albania</a> <br>
+           <i class="fas fa-phone"></i>
+           <a href="tel:+355682081598" style="color: white; text-decoration: none;">+355682081598</a><br>
+           <i class="fas fa-envelope"></i>
+           <a href="mailto:syncron@gmail.com" style="color: white; text-decoration: none;">syncron@gmail.com</a>
+        </div>
+    </div>
+</footer>
+
+<div class="legal">
+    <p class="container">Copyright (c) 2 Copyright Holder All Rights Reserved.</p>
+
+</div>
+
+
+
+<button id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Book Your Stay</h2>
+    <form id="whatsappForm">
+        <label for="modal_room">Select Room</label>
+        <select id="modal_room" name="room" style="width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc;">
+            <option value="General Inquiry">Select a Room...</option>
+            <option value="Apartment with Balcony">Apartment with Balcony</option>
+            <option value="Deluxe King Studio">Deluxe King Studio</option>
+            <option value="Lovely Two Bedroom">Lovely Two Bedroom</option>
+        </select>
+
+        <label for="modal_name">Name</label>
+        <input type="text" id="modal_name" name="name" placeholder="Your Name" required>
+
+        <label for="modal_phone">Phone</label>
+        <input type="tel" id="modal_phone" name="phone" placeholder="Your Phone Number" required>
+
+        <label for="modal_email">Email</label>
+        <input type="email" id="modal_email" name="email" placeholder="Your Email">
+
+        <label for="modal_message">Message (Optional)</label>
+        <textarea id="modal_message" name="message" rows="3" placeholder="Additional details..."></textarea>
+
+        <input type="submit" value="Send to WhatsApp" class="primary-btn" style="background: #13322B; color: white; width: 100%; margin-top: 10px;">
+    </form>
+  </div>
+</div>
+
+<script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"> </script>
+<script src="main.js"></script>
+</body>
+</html>
